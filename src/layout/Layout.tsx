@@ -6,9 +6,9 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     return (
         <SidebarProvider>
             <div className="flex h-screen w-screen">
-                <UISidebar />
                 <div className="flex flex-col overflow-auto flex-1">
-                    <Navbar/>
+                    <Navbar />
+                    <UISidebar />
                     <main className="flex-1 overflow-auto w-full">
                         <div className="">
                             {children}
